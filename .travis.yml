@@ -1,5 +1,4 @@
 language: java
 job:
-  script: pwd
   script: mvn clean install
   script: bash <(curl -s https://detect.synopsys.com/detect.sh) --blackduck.url="https://poc102.blackduck.synopsys.com/" --blackduck.api.token="NjE3NDkyN2QtMTkwOC00YjUzLTk0Y2QtNzE5MWE2MTExZGMzOmQ4OTQ1NzZjLWJkNTQtNDc4OC1iOTM0LTNkZDE0OWI1MTMyYQ==" --detect.project.name="TravisMavenJava" --blackduck.trust.cert=true
