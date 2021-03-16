@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="/var/lib/jenkins/jobs/Duck Hub/workspace/duck-hub/target/duck-hub-3.0/src">
+    <fileset includes="**/*.java" dir="/var/lib/jenkins/jobs/Duck Hub/workspace/duck-hub/src/main/java"/>
+  </copy>
+</target>
+</project>
